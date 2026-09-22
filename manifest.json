@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ERP SYNC",
+  "version": "1.0.0",
+  "description": "A Chrome extension that syncs data with CMRIT ERP. Made with love by Krishna Sapkota",
+  "action": {
+    "default_title": "ERP SYNC",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16x16.png",
+      "48": "images/48x48.png",
+      "128": "images/128x128.png"
+    }
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
